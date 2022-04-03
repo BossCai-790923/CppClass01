@@ -30,6 +30,16 @@ int main()
     // b = t;
 
     // Solution 2) Requirement: swap without using a 3rd var t --------------
+    a = a + b;
+    b = a - b;
+    a = a - b;
+
+    /*
+    initially            a = a0         b = b0
+    after a = a + b      a = a0 + b0    b = b0
+    after b = a - b      a = a0 + b0    b = a0
+    after a = a - b      a = b0         b = a0
+    */
 
 
 
