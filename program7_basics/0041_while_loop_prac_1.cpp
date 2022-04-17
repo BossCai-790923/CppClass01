@@ -73,10 +73,13 @@ int var range is negative 2 billion to positive 2 billion
 5) C/C++ has a data type called 'long long', which takes 8 bytes, which is 64 bits. 
 
 [HOMEWORK] tell me the range of 'long long'
+long long var range is: [-2^63, 2^63-1]
+2^3=8, 
+2^10=1024=10^3,
+2^60=10^18, 
+2^63=8*10^18
 
-
-
-
+long long var range is: [-9*10^18, 9*10^18],    
 ---------------------------------------------------------
 
 
