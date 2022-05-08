@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <math.h>
 #include <limits.h>
+#include <float.h>
+#include <string.h>
+
 
 int main()
 {
