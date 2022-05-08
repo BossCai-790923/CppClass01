@@ -13,4 +13,6 @@ Input: n and k
 Output: 
 1 5 6 7 
 
+k <= n <= 1000
+
 */
