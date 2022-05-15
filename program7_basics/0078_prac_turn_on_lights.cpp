@@ -16,3 +16,45 @@ Output:
 k <= n <= 1000
 
 */
+
+#include <stdio.h>
+#include <math.h>
+#include <limits.h>
+#include <float.h>
+#include <string.h>
+
+
+int main()
+{
+
+
+    // Step 1）Prepare data --------------------------
+    int n, k;
+    scanf("%d%d", &n, &k);
+
+    /*
+    declare an bool array
+    set size=1001, as max n can be 1000, and I keep the 1st one unused.
+    I only init the 1st value to false
+    the remaining 1000 values will be set to false automaically by C/C++ 
+    */
+    bool l[1001] = {false};
+
+
+    // Step 2) mimic the process ---------------------
+
+    // loop all persons from 1 to k
+    for(int i = 1; i <=k; i++) // loop k person
+        for(int j = 1; j <= n; j++) // loop n lights
+            if(j % i == 0)
+                l[j] = !l[j];
+
+    
+    // Step 3) check the result ------------------------
+    for(int i = 1; i <=n; i++)
+        if(l[i])
+            printf("%d\n", i);
+            
+
+    return 0;
+}
