@@ -19,7 +19,7 @@ int main()
     C/C++ will not report any error even you exceeds arrays' size. Insidious issue.
 
     ISSUE 2:
-    You need to know hte array size when you write your program.
+    You need to know the array size when you write your program.
     This is illegal.
     */
 //    int x = 5;
