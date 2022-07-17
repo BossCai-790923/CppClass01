@@ -12,7 +12,7 @@ int main() {
     cout << "&myNumbers[0] : " << &myNumbers[0] << endl;
 
     for(int i = 0; i < 5; i++)
-        cout << myNumbers[i] << " is same as: " << "<HOMEWORK>" << endl; 
+        cout << myNumbers[i] << " is same as: " << *(myNumbers+i) << endl; 
     /*
     Please use pointer myNumbers and i to express the same value as myNumbers[i]
     */
